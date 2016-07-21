@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@mipmap/ic_launcher"
+    >
+ <LinearLayout
+     android:orientation="vertical"
+     android:layout_marginTop="600px"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content">
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="600px"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:hint="用户名" />
+
+    <EditText
+        android:id="@+id/et_psw"
+
+        android:layout_width="600px"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:hint="密 码" />
+
+<RelativeLayout
+    android:layout_width="600px"
+    android:layout_gravity="center_horizontal"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content">
+    <Button
+        android:id="@+id/bn_login"
+        android:layout_alignParentLeft="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="登陆" />
+    <Button
+        android:id="@+id/bn_register"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="一键注册"/>
+
+
+    <TextView
+        android:layout_below="@id/bn_login"
+        android:layout_alignParentRight="true"
+        android:padding="20px"
+        android:id="@+id/tv_log"
+        android:layout_width="6000px"
+        android:layout_height="wrap_content"
+        android:minHeight="600px"
+        android:background="#bf696969"
+        android:text="等待服务器回应..."
+        android:textColor="#696969"
+        android:textSize="30px" />
+</RelativeLayout>
+
+ </LinearLayout>
+</RelativeLayout>
